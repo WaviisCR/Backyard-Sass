@@ -1,0 +1,53 @@
+$sky:#3CB1F6;
+$silverlight:#F6F6F6;
+
+a{
+	text-decoration: none;
+}
+.navbar{
+	margin-bottom:0;
+}
+.brand{
+	img{
+	height: 3.5em;	
+	}
+}
+#Recreate ,#Optimize, footer{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+.hero-bg{
+	background-image:url(../images/hero.jpg);
+	background-size:cover;
+	.bg{
+		padding:10%;
+	}
+}
+.bg-transparent{
+	background-color:rgba(0,0,0, 0.4)
+}
+#Optimize{
+	img{
+		width: 85%;
+	}
+}
+#Recreate{
+	background-color:$silverlight;
+	img{
+		width: 60%;
+	}
+}
+
+@mixin redes() {
+	border-radius:50%;
+	padding:1%;
+	margin:0.5em;
+	border: $sky solid 1px;
+	color: $sky;
+}
+.social{
+	margin-bottom:1%;
+}
+.social .icon{
+@include redes();
+}
